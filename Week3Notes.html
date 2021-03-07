@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="week3style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>NuCamp Notes</h1>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NC Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="notes.html">Notes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shortcuts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#" >Checklists</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#" >Glossary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#" >Search</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <!-- Overview: Collapse and Accordion -->
+<h2>Overview: Collapse and Accordion</h2>
+    <h3>Collaspe Component</h3>
+    <ul>
+        <li>helps to toggle parts of a webpage in and out of view</li>
+        <li>Designed to be flexible with the help of JS plugins, which can be used with data attributes</li>
+        <li>this can be used with BS Card component to create a type of Collapse called an Accordion</li>
+        <li></li>
+    </ul>
+    <h3>How to make Accordion</h3>
+    <ol>
+        <li>Wrap main content around a div:id:"accordion".</li>
+        <li>Inside that div, create a "card" div for each piece of content to collapse in accordion</li>
+        <li>inside card creat a div:role:"tab"class:"card-header</li>
+        <li>identify the header content and wrap "a" element around it</li>
+        <li>inside the "a" element add data-toggle:"collapse" and  data-target:"its assoicated link-to-id</li>
+        <li>for each card except the first one, in the "a" element, add a class of "collapseD"</li>
+        <li>wrap a div:class:"card-body" around relevant content usually wrapped around "p" element</li>
+        <li> add "d-none" and "d-sm-block" class to the "p" element</li>
+        <li>Wrap another div:class:"collapse" and id:"its related #" around the card-body div</li>
+        <li></li>
+        <li></li>
+    </ol>
+    <h2>Overview:Bootstrap JavaScript Components</h2>
+    <ul>
+        <li>Many BS components use JS plugins for greater functionality</li>
+        <li>Most of the time you dont need to write any JS yourself to use plugins</li>
+        <li>Instead, BS has defined HTML5 custom data attributes you can use to access and configure the JS plugins thru HTML</li>
+    </ul>
+    <h2>HTML Custom Data-* Attributes</h2>
+    <ul>
+        <li>these are new in HTML5</li>
+        <li> its allows you to create custom attributes to store any data you want in any HTML element, then later access them via JS or CSS</li>
+        <li>to use them, use the attribute name of data- plus a string(must have at least one lowercase character) of your choice</li>
+        <li></li>
+    </ul>
+    <h2>Related Links</h2>
+    <ul>
+      <li><a href="https://getbootstrap.com/docs/4.5/getting-started/javascript/#data-attributes">Bootstrap-JS</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">MDN - Use data attrributes</a></li>
+      <li><a href="https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes">WHATWG HTML Living Standard specification on custom data attributes</a></li>
+  </ul>
+ <!-- Overview: The Nav Component -->
+  <h2>Overview: The Nav Component</h2>
+  <ul>
+      <li>Set up diff kinds of navigation interfaces using either the ul or nav element and the class of "nav"</li>
+      <li>includes simple sets of links or more complex tabs or pills.</li>
+  </ul>
+  <h3>How to add a tabbed interface</h3>
+  <ol>
+      <li>set up ul elements with li elements inside it. Label the li accordingly</li>
+      <li>give ul element the class of "nav" amd "nav-tabs"</li>
+      <li>add "nav-item" to all list items</li>
+      <li>wrap "a" element around each name within the li elements</li>
+      <li>give "a" elements the class of "nav-link"</li>
+      <li>Assign link to its related name</li>
+      <li>add a role of "tab" and a data-toggle of "tab" in each list item</li>
+      <li> add to the class of the first "a" element "active" to make this the default open tab</li>
+      <li>wrap div around the tabs associated content with the class of "tab-content"</li>
+      <li>wrap div around each piece of content that will have its own tab with the role:"tabpanel", class:"tab-pane fade" id:"its associated link"</li>
+      <li> add "show active" to a div class to create an open default tab</li>
+  </ol>
+  <h2>Related Links</h2>
+  <ul>
+      <li><a href="https://getbootstrap.com/docs/4.5/components/navs/#tabs">Bootstrap Tabs</a></li>
+  </ul>
+  <!-- Overview: Collapse and Accordian -->
+  <h2>Overview: Collapse and Accordian</h2>
+    <h3>Collapse Component</h3>
+    <ul>
+        <li>helps to toggle parts of a webpage in and out of view</li>
+        <li>Designed to be flexible with the help of JS plugins, which can be used with data attributes</li>
+        <li>this can be used with BS Card component to create a type of Collapse called an Accordion</li>
+        <li></li>
+    </ul>
+    <h3>How to make Accordion</h3>
+    <ol>
+        <li>Wrap main content around a div:id:"accordion".</li>
+        <li>Inside that div, create a "card" div for each piece of content to collapse in accordion</li>
+        <li>inside card creat a div:role:"tab"class:"card-header</li>
+        <li>identify the header content and wrap "a" element around it</li>
+        <li>inside the "a" element add data-toggle:"collapse" and  data-target:"its assoicated link-to-id</li>
+        <li>for each card except the first one, in the "a" element, add a class of "collapseD"</li>
+        <li>wrap a div:class:"card-body" around relevant content usually wrapped around "p" element</li>
+        <li> add "d-none" and "d-sm-block" class to the "p" element</li>
+        <li>Wrap another div:class:"collapse" and id:"its related #"  and .data-parent: "#accordion" around the card-body div</li>
+        <li> add show to the div class wrapped around the div:card-body, to the card you want to show as a default</li>
+    
+    </ol>
+    <h3>Related Links</h3>
+    <ul>
+      <li><a href="http://getbootstrap.com/docs/4.5/components/collapse/">Bootstrap Collapse</a> </li>
+      <li><a href="http://getbootstrap.com/docs/4.5/components/collapse/#accordion-example">Bootstrap Accordion Example</a></li>
+    </ul>
+    <h2>Tooltips and Modals</h2>
+    <h3>Tooltips</h3>
+<ul>
+  <li>Tooltip plugin generates content and mark-up on demand, and by default places tooltips after their trigger element</li>
+  <li>they rely on 3rd party library popper.js for positioning</li>
+  <li>The required markup for a tooltip is only a data attribute and title on the HTML element you wish to have a tooltip. </li>
+</ul>
+
+<h3>Popovers</h3>
+<ul>
+  <li>Works like a tooltip but you have to click on the element to trigger the markup, instead of hovering over it</li>
+</ul>
+<h3>Related Links</h3>
+<ul>
+  <li><a href="http://getbootstrap.com/docs/4.5/components/tooltips/">Bootstrap Tooltips</a></li>
+  <li><a href="https://getbootstrap.com/docs/4.5/components/popovers/">Bootstrap Popovers</a></li>
+</ul>
+<h3>Modals</h3>
+<ul>
+  <li>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</li>
+  <li>a modal is a window that opens over a parent window. the parent window is not usable until the modal is closed</li>
+  <li>there isn't a html element for modals</li>
+</ul>
+<h3>Related Links</h3>
+<ul>
+  <li><a href="http://getbootstrap.com/docs/4.5/components/modal/">Bootstrap Modals</a></li>
+  <li><a href="https://getbootstrap.com/docs/4.5/components/forms/">Bootstrap Forms</a></li>
+
+</ul>
+<h2>Overview: Carousel</h2>
+<ul>
+  <li>a carousel is a looping slideshow</li>
+  <li>With Bootstrap's custom HTML data-* attributes and component classes, you can build a carousel with indicators, manual controls, captions, and more.</li>
+  <li></li>
+  <li></li>
+</ul>
+        
+    <h3>Related links</h3>
+    <ul>
+      <li><a href="https://getbootstrap.com/docs/4.5/components/carousel/"> Bootstrap Carousel</a></li>
+      <li><a href=""></a></li>
+
+   </ul>
+   <h2>JavaScript Fundamentals</h2>
+
+   <h3>The Developer Console</h3>
+   <ul>
+     <li>all major browsers have a version of jS developer console.consoles are mainly used to test out small pieces of code or to interact with scripts on the current webpage.</li>
+     <li>The Developer Console is an ex of whats known as a R.E.P.L.- a Read Evaluate Print Loop</li>
+     <li>It is basically a simple interface that allows you to enter small pieces of JavaScript, immediately reads and evaluates that code, then prints out a response to it - either the value of an expression that you entered, or the return value if you entered a method or function.</li>
+     <li></li>
+   </ul>
+   <h3>Data Types, Variables, Grammar</h3>
+   <p>
+     Data types: Number, String, Boolean, Undefined (and more).
+   </p>
+   <ul>
+     <li>Number: can be an integer or have decimal oints,can be positive or negative</li>
+     <li>String: literal, textual data- will always have quotations around it</li>
+     <li>Boolean: true or false values</li>
+     <li>Undefined: a place in memory that has not been assigned a value.</li>
+   </ul>
+   <h4>Variable</h4>
+   <h5>Variables vs Literals</h5>
+   <ul>
+     <li>Literals do not change, they are hard coded values</li>
+     <li>variables is a location in the computer's memory where info can be stored and accessed by an identifier, ususally a variable name- ifo stored this way can be changed by the code </li>
+   </ul>
+
+   <h5>Variables: Declaration, Assignment, Initialization</h5>
+   <h6>Declaration</h6>
+
+   <ul>
+     <li>to declare a variable means to set aside a location in memory for it </li>
+     <li>declare all variables once prior to use, at the top of their scope use var/let/const to create and name a variable</li>
+   </ul>
+   <h6>Assignment</h6>
+   <ul>
+     <li>assign a value to the variable using an asignment operator, usually= </li>
+   </ul>
+   <h6>Initialization</h6>
+   <ul>
+     <li>the first time a variable is assigned a value, which can be done together with Declaration</li>
+   </ul>
+   <h4>JavaScript Grammar</h4>
+
+   <ul>
+     <li>JS is case sensitive</li>
+     <li>be consistent with quote brackets and indentation</li>
+     <li>use semicolons at the end of statements to show it has eleary finished</li>
+     <li> It is fairly common to use camelCase:the practice of writing phrases without spaces or punctuation, indicating the separation of words with a single capitalized letter, and the first word starting with either case.</li>
+     <li>Give sensible readable names</li>
+   </ul>
+   <h3>Assignment and Arithmetic Operators</h3>
+   <h4>Operators</h4>
+   <ul>
+     <li>Arithmetic Operators( + - */ ++ --) can be used prefix and postfix. these operators actually change the value of the operand
+       <ul><li>++ : Increment Operator takes a single operand, no spaces between ++ and variable name. Will increase the value of the variable by 1</li><li>-- :Decrement Operator takes a single operand, no spaces between an variable name. will decrement the value of the variable by 1</li></ul></li>
+     <li>Assignment Operators (= += -= *=/=): each takes 2 operand must ve a variable. Will each perform the arithmetic operation first, then assign the result to the left operand's value</li>
+     </ul>
+     <h3>Comparison and Logical Operators</h3>
+     <ul>
+       <li>all comparison operators return either true or false</li>
+     </ul>
+    <ul class="list-unstyled offset-1">
+      <li>== : Equality Operator- loose equality - the data types of its operands do not need to match</li>
+      <li> === : Strict Equality Operators- the data types of the operands must match</li>
+      <li>!= : inequality Operator, loose </li>
+      <li>!== : Strict Inequality Operator</li>
+    </ul>
+    <h4> Logical Operators</h4>
+    <ul>
+      <li>All logical operators retur true or false</li>
+      <li>All values can be converted to Boolean values</li>
+      <li>&& : Logical And: takes 2 operands and checks if both are truthy</li>
+      <li>|| : Logical Or : the only time this operator returns false is if all values are false</li>
+      <li>! : Logical Not: it determines the opposite value of a value</li>
+    </ul>
+    <h4>Type Coercion</h4>
+    <ul>
+      <li>Type coercion is one way to convert a value's data type.</li>
+    </ul>
+     <ul>
+       <li> Falsy: any value that is 0,"", undefined, null or NaN</li>
+     </ul>
+     <li>truthy: all other values are converted to true</li>
+
+     <h2>JS Review: If Else Statements</h2>
+
+    <p class="offset-2"> if (condition) { <br>.... code to execute...<br> }
+    </p>
+    <h2>Switch Statements</h2>
+    <p class="offset-2">
+      switch(expression) { <br>
+        case potential value of expression: <br>
+            ...code to be executed... <br>
+            break;<br>
+        case another potential value of expression: <br>
+            ...code to be executed... <br>
+            break; <br>
+        default: ...code to be executed if the expression did not match any of the cases...
+    }
+    
+    </p>
+     
+   
+  <h3>Related links</h3> 
+
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN - JavaScript Basics</a></li>
+    <li><a href="https://javascript.info/">JavaScript.info - The Modern JavaScript Tutorial</a></li>
+    <li><a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript</a></li>
+    <li><a href="https://javascript.info/comparison">Javascript.info - Comparisons</a></li>
+    <li><a href="https://javascript.info/logical-operators">Javascript.info - Logical Operators</a></li>
+    <li><a href="https://www.w3schools.com/js/js_type_conversion.asp">W3Schools - JavaScript Type Conversion Methods</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy"></a>MDN - Truthy</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">MDN - Operator Precedence</a></li>
+
+  </ul>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+       
+</body>
+</html>
