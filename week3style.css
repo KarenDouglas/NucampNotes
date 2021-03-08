@@ -1,8 +1,19 @@
-.sidenav{
-    border: black solid;
-    
-  position: ;
-
-.sidenav a{
-    display:inline;
+.navbar{
+  background-color:#901CAD;
+}
+.tab-content{
+  background-color: white;
+}
+.nav {
+  background-color: white;
+}
+.jumbotron{
+  margin: 0;
+  background-image: linear-gradient( to right, #9B89B3,#FFF6FF );
+  border-bottom: 4mm ridge #4B4453; 
+  padding: 30px;
+  
+}
+nav table{
+  border-bottom: 1px black solid ;
 }
