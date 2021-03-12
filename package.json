@@ -5,18 +5,20 @@
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KarenDouglas/NucampNotes.git"
   },
-  "author": "",
+  "author": "KarenDouglas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KarenDouglas/NucampNotes/issues"

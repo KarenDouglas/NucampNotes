@@ -1,0 +1,42 @@
+
+body{
+    background-color:#FFF6FF
+}
+header{
+    color: #4B4453;
+}
+.jumbotron{
+    margin: 0;
+    background-image: linear-gradient( to right, #9B89B3,#FFF6FF );
+    border-bottom: 4mm ridge #4B4453; 
+    padding: 30px;
+    
+}
+h2, h3 {
+    padding: 20px;
+    text-align: center;
+    border-bottom: dotted black;
+}
+h4{
+    text-align: center;
+    border-bottom: solid black
+}
+.col{
+    border-right: dotted black;
+    border-bottom: #000000 solid;
+    
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+.navbar{
+    background-color:#901CAD;
+}
+.tab-content{
+    background-color: white;
+}
+.nav {
+    background-color: white;
+}
