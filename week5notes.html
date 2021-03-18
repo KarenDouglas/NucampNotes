@@ -254,6 +254,181 @@
             </div>
         </div>
     </nav>
+<h1>Week 5 Notes</h1>
+<h2>Review: Function Declarations</h2>
+
+<div class="container">
+    <h3>Functions</h3>
+    <ul>
+        <li>Functions are a piece of code that can be used over and over again</li>
+        <li>There are multiple ways to create a function in js. Function declaration is the oldest way</li>
+        <div class="card">
+            <div class="card-body">
+                <p>function <span> uniqueFunctionName</span>(<span>// use this to pass data from outside the function, into the function</span>) { <br> <span> // function body-the statements that are executed when the function is called</span> <br> }
+            </div>
+        </div>
+        <li>In order to run the function code, you have to call the function.To call a function:</li>
+        <div class="card">
+            <div class="card-body"> 
+                <p><span> uniqueFunctionName</span>(argument);</p>
+            </div>
+        </div>
+        <li>These functions can be called over and over again</li>
+    </ul>
+    <h3>The Parameter List and Arguments</h3>
+    <ul>
+        <li>you can pass literal values or variables into a function; these are called Arguments</li>
+        <div class="card">
+            <div class="card-body">
+                <p>function <span>uniqueFunctionName</span>(<span> parameter 1,parameter 2, parameter 3</span>) { <br> <span> // function body-the statements that are executed when the function is called</span> <br> }
+                    <br>
+                <p><span> uniqueFunctionName</span>(ARGUMENTS);</p>    
+            </div>
+        </div>
+    </ul>
+    <h3>Multiple Parameters</h3>
+    <ul>
+        <li>multiple parameters can pass thru a function. The arguments simply have to link to each parameter</li>
+    </ul>
+    <h3>Function Invocation</h3>
+    <ul>
+        <li>The code inside the function will execute when something invokes or calls the function: 
+            <ul>
+                <li>When event occurs</li>
+                <li>when it is called from JS code</li>
+                <li>Automatically (self-invoked)</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>The Return Statment</h3>
+    <ul>
+        <li>regardless to what happens outside a function, a function returns a value</li>
+        <li>if you don't set a function to be returned, its value will be undefined</li>
+        <li>When JavaScript reaches a return statement, the function will stop executing.</li>
+        <li>Return statements specifies a value to be passed thru the function</li>
+    </ul>
+    <h3>Function Hoisting</h3>
+    <ul>
+        <li>All functions written with the function declaration syntax will be pulled to the top of its scope before execution. aka you will be able to call that function even before you reach it</li>
+
+    </ul>
+</div>
+<h2>Review: Events</h2>
+<div class="container">
+    <h3>Onevent Handlers</h3>
+    <ul>
+        <li> this is the old fashion way</li>
+        <li>there are two ways to write an onevent Handler
+            <ul>
+                <li>the first way is to write a html attribute, the event can be called in js</li>
+                <div class="card">
+                    <div class="card-body">
+                        <p>
+                            &lt;elementName <span>oneventHandlerName</span>=<span>"event('jscode')"</span>	&gt; text &lt; elementName&gt;
+                        </p>
+                    </div>
+                </div>
+                <li>writing onEvent handlers in this way is not recommended</li>
+                <li>The other way to write onevent handlers is to use querySelectors in JS:</li>
+                <div>
+                    <div>
+                        <p>document.<span> querySelector</span>('elementName').event= <span> functionName</span>;</p>
+
+                        //followed by the function or functions that defines the functionName
+                    </div>
+                </div>
+            </ul>
+        </li>
+    </ul>
+    <h3>Event Listeners</h3>
+    <ul>
+        <li> You can add an event listener to any download</li>
+        <div class="card">
+            <div class="card-body">
+                <p>selector.<span>addEventListener</span>(<span>'event'</span>, functionName);</p>
+            </div>
+        </div>
+        <li>the advantage to event listeners is that you can attach more than one for the same event to one node</li>
+        <li>you can also remove events in JS code like this:</li>
+        <div class="card">
+            <div class="card-body">
+                <p>selector.<span>removeEventListener</span>(<span>'event'</span>, functionName)</p>
+            </div>
+        </div>
+    </ul>
+</div>
+    <h2>JS: Function Expressions</h2>
+<div class="container">
+    <h3>Function Expressions</h3>
+    <ul>
+        <li>very similar to a function declaration, a function expression has almost the same syntax</li>
+        <li>the main diff between them is that a function expression doesn't require a function name( anonymous function) ex:</li>
+        <div class="card">
+            <div class="card-body">
+                <p>const <span> constName</span> =<span>function</span> (a,b){ <br> <span>return</span> a+b; <br>}; <br> <span> console.log</span>(constName) </p>
+            </div>
+        </div>
+        <li>another diff is that expressions can't be hoisted</li>
+        <li>if you want to refer to the current function inside the function body, you need to creat a named expression.(this name is  then local only to the function body scope, which is rare)</li>
+    </ul>
+</div>
+<!-- Arrow Function Start -->
+<h2>Arrow Functions</h2>
+<div class="container">
+    <h3>Arrow Functions</h3>
+    <ul>
+        <li>add to js in ES6</li>
+        <li>the two main advantages to arrow functions: 1. they are more concise. 2. they dont have their own "this" binding </li>
+        <div class="card">
+            <div class="card-body">
+                <p>  variable <span>variableName</span> = (a,b) => a+b; <br> <span>variableNam</span>(argument);</p>
+            </div>
+        </div>
+        <li>you can omit the parentheses if there is only one variable</li>
+        <li>you can only omit the curly braces if there is only one statement in the function</li>
+        <div class="card">
+            <div class="card-body">
+                <p>variable <span>variableName</span> = (a,b) => { <br> variable <span>variableName2</span> =a + b; <br> <span>return</span> c; <br> }</p>
+            </div>
+        </div>
+        <li>arrow functions can not be hoisted</li>
+    </ul>
+</div>
+<h2>Var, Let, Const</h2>
+<div class="container">
+    <h3>The diff between let and const</h3>
+    <ul>
+        <li>let can be reassigned and const can not</li>
+        <li>const can not be initialized without declaration. let can be initialized with out being declared</li>
+        <li>its recommended to used consts in most cases unless you know you will be reassigning the variable.</li>
+    </ul>
+    <h3>Var vs. Let and Const</h3>
+    <ul>
+        <li> var can be redeclared, let and const can not</li>
+        <li> var has function scope; let and const have block scope</li>
+    </ul>
+    <h3>Global, function, and block scope</h3>
+    <ul>
+        <li> the scope defines where a variable is accessible</li>
+        <li>global scope: a variable declared outside any code block, regardless of if yo use let, var, or const
+            <ul>
+                <li>it's best to limit declaring variables globally, as it is harder to keep track of them as the js script gets longer. too many variable in global scope is known as "poluting the global scope" </li>
+            </ul>
+        </li>
+        <li> var has funtion scope. If you declare a variable using var inside a function, the variable only exists inside that function and cannot be accessed from outside of that function. It's only created when the function is called, then deleted when the function call is finished.</li>
+        <li>In general, child scopes in JavaScript will inherit the variables of their parent scope, regardless of if the variables were declared with var, let, or const. This is a one-way relationship - parents do not inherit the variables of their child scopes.</li>
+        <li>let and const have block scope, which means that they exist only within the code block they are declared. these code blocks can be any block; function, for,while loop, switch, if etc.
+            <ul>
+                <li>for example: if you set a var inside of an If block, it will exist outside of the If block. If you set a let or const inside of an if block, it only exists inside of that if block</li>
+            </ul>
+        </li>
+        <li>tip: be sure to declare you variable before using them </li>
+    </ul>
+
+
+</div>
+
+
 
 
     <!-- Scripts -->
