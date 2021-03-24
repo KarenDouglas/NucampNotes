@@ -8,6 +8,7 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="week3style.css">
     <title>Week 5 Notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header class="jumbotron text-center">
@@ -255,22 +256,22 @@
         </div>
     </nav>
 <h1>Week 5 Notes</h1>
-<h2>Review: Function Declarations</h2>
-
-<div class="container">
+<h2 id="sectionHeader6">Review: Function Declarations</h2>
+<!--  Functions -->
+<div class="container" id="sectionBody6">
     <h3>Functions</h3>
     <ul>
         <li>Functions are a piece of code that can be used over and over again</li>
         <li>There are multiple ways to create a function in js. Function declaration is the oldest way</li>
         <div class="card">
             <div class="card-body">
-                <p>function <span> uniqueFunctionName</span>(<span>// use this to pass data from outside the function, into the function</span>) { <br> <span> // function body-the statements that are executed when the function is called</span> <br> }
+                <p>function <span class="codeBlue"> functionName</span>(<span class="codeGreen"> parameters</span>) { <br>  // the code to be executed <br> }
             </div>
         </div>
         <li>In order to run the function code, you have to call the function.To call a function:</li>
         <div class="card">
             <div class="card-body"> 
-                <p><span> uniqueFunctionName</span>(argument);</p>
+                <p><span class="codeBlue"> uniqueFunctionName</span>(argument);</p>
             </div>
         </div>
         <li>These functions can be called over and over again</li>
@@ -280,9 +281,9 @@
         <li>you can pass literal values or variables into a function; these are called Arguments</li>
         <div class="card">
             <div class="card-body">
-                <p>function <span>uniqueFunctionName</span>(<span> parameter 1,parameter 2, parameter 3</span>) { <br> <span> // function body-the statements that are executed when the function is called</span> <br> }
+                <p>function <span class="codeBlue">uniqueFunctionName</span>(<span class="codeGreen"> parameter 1,parameter 2, parameter 3</span>) { <br> // function body-the statements that are executed when the function is called <br> }
                     <br>
-                <p><span> uniqueFunctionName</span>(ARGUMENTS);</p>    
+                <p><span class="codeBlue"> uniqueFunctionName</span>(ARGUMENTS);</p>    
             </div>
         </div>
     </ul>
@@ -313,8 +314,8 @@
 
     </ul>
 </div>
-<h2>Review: Events</h2>
-<div class="container">
+<h2 id="sectionHeader7">Review: Events</h2>
+<div class="container" id="sectionBody7">
     <h3>Onevent Handlers</h3>
     <ul>
         <li> this is the old fashion way</li>
@@ -324,7 +325,7 @@
                 <div class="card">
                     <div class="card-body">
                         <p>
-                            &lt;elementName <span>oneventHandlerName</span>=<span>"event('jscode')"</span>	&gt; text &lt; elementName&gt;
+                            &lt;elementName <span class="codeBlue">oneventHandlerName</span>=<span class="codeGreen">"event('js')"</span>	&gt; text &lt; elementName&gt;
                         </p>
                     </div>
                 </div>
@@ -332,7 +333,7 @@
                 <li>The other way to write onevent handlers is to use querySelectors in JS:</li>
                 <div>
                     <div>
-                        <p>document.<span> querySelector</span>('elementName').event= <span> functionName</span>;</p>
+                        <p>document.<span class="codeBlue"> querySelector</span>('elementName').event= <span class="codeGreen"> functionName</span>;</p>
 
                         //followed by the function or functions that defines the functionName
                     </div>
@@ -345,27 +346,27 @@
         <li> You can add an event listener to any download</li>
         <div class="card">
             <div class="card-body">
-                <p>selector.<span>addEventListener</span>(<span>'event'</span>, functionName);</p>
+                <p>selector.<span class="codeBlue">addEventListener</span>(<span class="codeGreen">'event'</span>, functionName);</p>
             </div>
         </div>
         <li>the advantage to event listeners is that you can attach more than one for the same event to one node</li>
         <li>you can also remove events in JS code like this:</li>
         <div class="card">
             <div class="card-body">
-                <p>selector.<span>removeEventListener</span>(<span>'event'</span>, functionName)</p>
+                <p>selector.<span class="codeBlue">removeEventListener</span>(<span class="codeGreen">'event'</span>, functionName)</p>
             </div>
         </div>
     </ul>
 </div>
-    <h2>JS: Function Expressions</h2>
-<div class="container">
+    <h2 id="sectionHeader8">JS: Function Expressions</h2>
+<div class="container" id="sectionBody8">
     <h3>Function Expressions</h3>
     <ul>
         <li>very similar to a function declaration, a function expression has almost the same syntax</li>
         <li>the main diff between them is that a function expression doesn't require a function name( anonymous function) ex:</li>
         <div class="card">
             <div class="card-body">
-                <p>const <span> constName</span> =<span>function</span> (a,b){ <br> <span>return</span> a+b; <br>}; <br> <span> console.log</span>(constName) </p>
+                <p>const <span class="codeBlue"> constName</span> =<span class="codeGreen">function</span> (a,b){ <br> <span class="codeYellow">return</span> a+b; <br>}; <br>  console.log(constName) </p>
             </div>
         </div>
         <li>another diff is that expressions can't be hoisted</li>
@@ -373,29 +374,29 @@
     </ul>
 </div>
 <!-- Arrow Function Start -->
-<h2>Arrow Functions</h2>
-<div class="container">
+<h2 id="sectionHeader9">Arrow Functions</h2>
+<div class="container" id="sectionBody9">
     <h3>Arrow Functions</h3>
     <ul>
         <li>add to js in ES6</li>
         <li>the two main advantages to arrow functions: 1. they are more concise. 2. they dont have their own "this" binding </li>
         <div class="card">
             <div class="card-body">
-                <p>  variable <span>variableName</span> = (a,b) => a+b; <br> <span>variableNam</span>(argument);</p>
+                <p>  variable <span class=codeBlue>variableName</span> = (a,b) => a+b; <br> <span class="codeGreen">variableName</span>(argument);</p>
             </div>
         </div>
         <li>you can omit the parentheses if there is only one variable</li>
         <li>you can only omit the curly braces if there is only one statement in the function</li>
         <div class="card">
             <div class="card-body">
-                <p>variable <span>variableName</span> = (a,b) => { <br> variable <span>variableName2</span> =a + b; <br> <span>return</span> c; <br> }</p>
+                <p>variable <span class="codeBlue">variableName</span> = (a,b) => { <br> variable <span class="codeGreen">variableName2</span> =a + b; <br> <span class="codeYellow">return</span> c; <br> }</p>
             </div>
         </div>
         <li>arrow functions can not be hoisted</li>
     </ul>
 </div>
-<h2>Var, Let, Const</h2>
-<div class="container">
+<h2 id="sectionHeader10">Var, Let, Const</h2>
+<div class="container" id="sectionBody10">
     <h3>The diff between let and const</h3>
     <ul>
         <li>let can be reassigned and const can not</li>
@@ -432,9 +433,10 @@
 
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+    <!-- My JS script -->
+    <script src="js\Week4-5.js"></script>
 </body>
 </html>

@@ -17,3 +17,45 @@
 nav table{
   border-bottom: 1px black solid ;
 }
+h1, h2 {
+  text-align: center;
+  padding: 10px;
+}
+.codeBlue {
+  color: blue;
+}
+.codeGreen {
+  color: green;
+}
+.codeYellow {
+  color: red;
+}
+.card-body{
+  background-color: rgb(248, 242, 248);
+}
+h3 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  cursor: pointer;
+}
+h4 {
+  background-color: grey;
+  color: white;
+}
+
+h2 {
+  background-color: grey;
+  color: white;
+  border-bottom: black solid 1px;
+  cursor: pointer;
+}
+body {
+  background-color: rgb(190, 187, 192);
+}
+.container {
+  background-color:white;
+  padding: 0px 0px 5px 0px;
+
+}
