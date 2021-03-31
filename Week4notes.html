@@ -102,12 +102,11 @@
                         </td>
                         <td>
                             <p class="d-none d-lg-block">
-                                -  <br>
-                                - <br>
-                                -  <br>
-                                - 
+                                -Functions <br>
+                                -Events <br>
+                                - Var, Let, Const <br>
                             </p>
-                            </td>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -124,10 +123,10 @@
                     <tr>
                         <td>
                         <p class="d-none d-lg-block">
-                        - <br>
-                        - <br>
-                        - <br>
-                        -
+                        -Template Literals <br>
+                        -Objects, Classes <br>
+                        -Advanced Array Methods <br>
+                        - Map, Filter, Reduce
                         </p>
                         </td>
                         <td>
@@ -260,64 +259,70 @@
   <h1>Week 4 Notes</h1>
 
   <!-- Overview of Bootstrap and jQuery Start -->
-  <h2  id="sectionHeader1">Overview: Bootstrap and jQuery</h2>
-  <div class="container" id="sectionBody1">
-    <h3>jQuery</h3>
-    <ul>
-        <li>Extremely popular JS library created in 2006</li>
-        <li>Used for Dom manipulation, event listerners, handling cross-browser issues, and more</li>
-        <li>jQuery usage is down as modern browsers/js have improved</li>
-        <li>Bootstrap JS components are designed to be manipulated with jQuery</li>
-        <li>The purpose of jQuery is to make it easier to use JS on your website.</li>
-        <li>it takes a lot of common tasks that require many lines of JS code to accomplish, an dwraps them into methods that you can call with a single line of code</li>
-    </ul>
-    <h3>jQuery Syntax</h3>
+  <h2 class="sectionHeader1" id="sectionHeader1">Overview: Bootstrap and jQuery</h2>
+  <div class="container sectionBody1" id="sectionBody1">
+    <h3 class="subSectionHeader">jQuery</h3>
+    <section class="subSectionBody">
         <ul>
-        <li>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</li>
-        <li>jQuery uses CSS syntax to select elements.</li>
+            <li>Extremely popular JS library created in 2006</li>
+            <li>Used for Dom manipulation, event listerners, handling cross-browser issues, and more</li>
+            <li>jQuery usage is down as modern browsers/js have improved</li>
+            <li>Bootstrap JS components are designed to be manipulated with jQuery</li>
+            <li>The purpose of jQuery is to make it easier to use JS on your website.</li>
+            <li>it takes a lot of common tasks that require many lines of JS code to accomplish, an dwraps them into methods that you can call with a single line of code</li>
         </ul>
-        <p>Basic syntax is: </p>
-        <div class="card">
-            <div class="card-body">
-            $( <span class="codeBlue">selector</span>).action()
+    </section>
+    <h3 class="subSectionHeader2">jQuery Syntax</h3>
+        <div class="subSectionBody2">
+            <ul>
+            <li>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</li>
+            <li>jQuery uses CSS syntax to select elements.</li>
+            </ul>
+            <p>Basic syntax is: </p>
+            <div class="card">
+                <div class="card-body">
+                $( <span class="codeBlue">selector</span>).action()
+                </div>
             </div>
+            <ul>
+                <li>A $ sign to define/access jQuery </li>
+                <li>A (selector) to "query (or find)" HTML elements</li> 
+                <li>A jQuery action() to be performed on the element(s)</li>
+            </ul>
         </div>
-        <ul>
-            <li>A $ sign to define/access jQuery </li>
-            <li>A (selector) to "query (or find)" HTML elements</li> 
-            <li>A jQuery action() to be performed on the element(s)</li>
-        </ul>
-        <h3>The Document Ready Event</h3>
-        <div class="card">
-            <div class="card-body">
-            <p>$(document).ready(<span class="codeBlue">function</span>(){ <br>
+            <h3 class=" subSectionHeader3">The Document Ready Event</h3>
+                <div class="subSectionBody3">
+                    <div class="card">
+                        <div class="card-body">
+                        <p>$(document).ready(<span class="codeBlue">function</span>(){ <br>
 
-                // jQuery methods go here... <br>
-            
-            });
-            </p>
+                            // jQuery methods go here... <br>
+                        
+                        });
+                        </p>
+                        </div>
+                    </div>
+                <p>document ready events prevent any jQuery code from running before the document is finished loading. <br> It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.</p>
+                <p>Tip: The jQuery team has also created an even shorter method for the document ready event:</p>
+                <div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                    $(function(){ <br>
+                    // jQuery methods go here... <br>
+                    });
+                    </div>
+                </div>
             </div>
-        </div>
-        <p>document ready events prevent any jQuery code from running before the document is finished loading. <br> It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.</p>
-        <p>Tip: The jQuery team has also created an even shorter method for the document ready event:</p>
-        <div>
-            
-        </div>
-        <div class="card">
-            <div class="card-body">
-            $(function(){ <br>
-            // jQuery methods go here... <br>
-            });
-            </div>
-        </div>
-        <h3>jQuery Selectors</h3>
-        <ul>
+        <h3 class="subSectionHeader4">jQuery Selectors</h3>
+        <ul class="subSectionBody4">
             <li>jQuery selectors allow you to select and manipulate HTML element(s).</li>
             <li>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</li>
             <li>All selectors in jQuery start with the dollar sign and parentheses: $().</li>
             <li>The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.</li>
         </ul>
-        <h3>JQuery Event Methods</h3>
+        <h3 class="subSectionHeader5">JQuery Event Methods</h3>
         <ul>
             <li>jQuery is tailor-made to respond to events in an HTML page.        </li>
             <li>All the different visitors' actions that a web page can respond to are called events</li>
@@ -341,11 +346,11 @@
         <!-- Overview of Bootrap and JQuery End -->
     </div>
     <!-- Overview: Preprocessors Start -->
-        <h2 id="sectionHeader2">Overview: Preprocessors: Sass</h2>
+        <h2 class="sectionHeader2" id="sectionHeader2">Overview: Preprocessors: Sass</h2>
         <ul>
             <li>CSS preprocessors are stylesheet scripting languages that take CSS one step further, adding powerful features such as variables, functions, mixins, and more. They make it easier to write and maintain large, complex stylesheets. Stylesheet files written with preprocessors are compiled to regular CSS syntax before deployment</li>
          </ul>
-    <div class="container" id="sectionBody2">     
+    <div class="container sectionBody2 " id="sectionBody2">     
         <h3>Sass</h3>
         <ul>
             <li>Sass is a preprocessor. Syntactically Awesome Style Sheets</li>
@@ -372,8 +377,8 @@
             <li><a href="https://getbootstrap.com/docs/4.5/getting-started/theming/#sass">Bootstrap Theming - Sass</a></li>
         </ul>
     </div>
-        <h2 id="sectionHeader3"> Overview: Building and Deployment</h2>
-    <div class="container" id="sectionBody3">
+        <h2 class="sectionHeader3" id="sectionHeader3"> Overview: Building and Deployment</h2>
+    <div class="container sectionBody3" id="sectionBody3">
         <h3> Optimizing Your Files for Deployment</h3>
         <p>Ways to optimize files</p>
         <ul>
@@ -384,8 +389,8 @@
             <li>programs like Grunt and Gulp help to automate this process. Npm can also help with this</li>
         </ul>
     </div>id="sectionHeader3"
-        <h2 id="sectionHeader4">JavaScript Review</h2>
-    <div class="container" id="sectionBody4">
+        <h2 class="sectionHeader4" id="sectionHeader4">JavaScript Review</h2>
+    <div class="container sectionBody4" id="sectionBody4">
         <h3>While Loops</h3>
         <ul>
             <li>While loop has two elements: while ... do while</li>
@@ -420,8 +425,8 @@
             <li>break and continue statements can be used  for "for loops" just like while loops</li>
         </ul>
     </div>
-        <h2 id="sectionHeader5">Arrays</h2>
-    <div class="container" id="sectionBody5">
+        <h2 class="sectionHeader5" id="sectionHeader5">Arrays</h2>
+    <div class="container sectionBody5" id="sectionBody5">
         <h3>Arrays 1</h3>
         <ul>
             <li>An array is a list of items that are numerically indexed, startin withg 0</li>

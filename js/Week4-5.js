@@ -1,12 +1,7 @@
 $(function(){
-//     $("#sectionHeader1").mouseenter(function() {
-//         $("#sectionHeader1").css("background-color"," red");
-//       })
-//    $("#sectionHeader1").click(function() {
-//         $("#sectionBody1").slideToggle();
-//       })
+//Header and Body hover and slideToggle features
 
-      $("#sectionHeader1").on({
+      $(".sectionHeader1").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -14,10 +9,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody1").slideToggle("slow");
+          $(".sectionBody1").slideToggle("slow");
         }
       });
-      $("#sectionHeader2").on({
+      $(".sectionHeader2").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -25,10 +20,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody2").slideToggle("slow");
+          $(".sectionBody2").slideToggle("slow");
         }
       });
-      $("#sectionHeader3").on({
+      $(".sectionHeader3").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -36,10 +31,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody3").slideToggle("slow");
+          $(".sectionBody3").slideToggle("slow");
         }
       });
-      $("#sectionHeader4").on({
+      $(".sectionHeader4").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -47,10 +42,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody4").slideToggle("slow");
+          $(".sectionBody4").slideToggle("slow");
         }
       });
-      $("#sectionHeader5").on({
+      $(".sectionHeader5").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -58,10 +53,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody5").slideToggle("slow");
+          $(".sectionBody5").slideToggle("slow");
         }
       });
-      $("#sectionHeader6").on({
+      $(".sectionHeader6").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -69,10 +64,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody6").slideToggle("slow");
+          $(".sectionBody6").slideToggle("slow");
         }
       });
-      $("#sectionHeader7").on({
+      $(".sectionHeader7").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -83,7 +78,7 @@ $(function(){
           $("#sectionBody7").slideToggle("slow");
         }
       });
-      $("#sectionHeader8").on({
+      $(".sectionHeader8").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -91,10 +86,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody8").slideToggle("slow");
+          $(".sectionBody8").slideToggle("slow");
         }
       });
-      $("#sectionHeader9").on({
+      $(".sectionHeader9").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -102,10 +97,10 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody9").slideToggle("slow");
+          $(".sectionBody9").slideToggle("slow");
         }
       });
-      $("#sectionHeader10").on({
+      $(".sectionHeader10").on({
         mouseenter: function(){
           $(this).css( "background-color", "lightgray");
         },
@@ -113,7 +108,8 @@ $(function(){
           $(this).css("background-color", "grey");
         },
         click: function(){
-          $("#sectionBody10").slideToggle("slow");
+          $(".sectionBody10").slideToggle("slow");
         }
       });
   });
+  
