@@ -1,0 +1,107 @@
+
+/* main headers nav */
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background: white;
+}
+
+.topic-header {
+     background-color: hotpink;
+     text-align: center;
+     padding: 1rem;
+     margin: 4rem;
+ }
+ h1{
+     text-align: center;
+     padding: 1rem;
+     margin: 2rem;
+
+ }
+ .subtopic-header {
+    padding: 1rem 0 1rem 1rem;
+    margin: 4rem;
+    background-color: pink;
+
+    /* section notes/glossary and syntax style */
+}
+
+.glossary {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+   
+  }
+.section-notes {
+    background-color: rgb(243, 209, 214);
+    padding: 1rem;
+     margin: 2rem 0 2rem 1rem;
+}
+
+.list-notes{
+    
+    flex-basis: 100%;
+}
+   
+
+
+.vocab{
+   
+    
+    padding: 1rem;
+    border: solid 1px;
+    margin: .5rem;
+    background-color: rgb(56, 3, 56);
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+.definition{
+    
+    
+    padding: 1rem;
+    border: solid 1px;
+    margin: .5rem;
+    background-color: rgb(250, 128, 250);
+    color: black;
+    border-radius: 1rem;
+}
+
+
+
+.section-notes ul{
+    display: block;
+    flex-basis: 100%;
+    border: solid lightgray .5px;
+    padding: 1rem;
+    background-color: rgb(243, 219, 222);
+    list-style:inside;
+}
+.card{
+    background-color: gray;
+    width: fit-content;
+    border-radius: 0 1rem 0 0;
+}
+.syntax{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 0 2rem 0 0;
+}
+ .syntax span:nth-of-type(2){
+    color: yellow;
+}
+.syntax span:nth-of-type(1){
+    color: green;
+}
+.syntax span:nth-of-type(3){
+    color: blue;
+}
+.syntax span:nth-of-type(4){
+    color:green;
+}
+
+
+
+ 

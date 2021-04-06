@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="\css\Cohort2.css">
     <title>Document</title>
 </head>
 <body>
     <header class="jumbotron text-center">
         <h1>NuCamp Notes</h1>
     </header>
-    <nav class="sticky-top">
+    <nav class="sticky-top nav-bg">
       <nav class="navbar navbar-expand-sm navbar-light">
           <div class="container-fluid">
               <a class="navbar-brand" href="#">NC Notes</a>
@@ -256,50 +257,58 @@
         <h1>Week 6 Notes: JavaScript</h1>
     </div>
 
-    <div>
+    <div class="topic-header">
         <h2>Template Literals (Template Strings)</h2>
     </div>
     <!-- Template Literals Section -->
-    <div>
+    <div class="subtopic-header">
         <h3>Template Literals</h3>
-        <div>
-            <p class="vocab">Template Literals</p>
-            <p class="definition">strings allowing embedded expressions.You can use multi-line strings and string interpolation features with them. </p>
-            <ul>
-                <li>template literals are enclosed by the backtick, instead of quotes</li>
-                <li>they can contain placeholders ( they look like this: ${expression}). The expressions in the placeholders get passed to a function</li>
-            </ul>
+        <div class="section-notes">
+            <div class="glossary flex-container">
+                <p class="vocab">Template Literals</p>
+                <p class="definition">strings allowing embedded expressions.You can use multi-line strings and string interpolation features with them. </p>
+            </div>
+            <div class="list-notes">    
+                <ul>
+                    <li>template literals are enclosed by the backtick, instead of quotes</li>
+                    <li>they can contain placeholders ( they look like this: ${expression}). The expressions in the placeholders get passed to a function</li>
+                </ul>
+            </div>
         </div>
         <h3>Multi-line strings</h3>
-        <div>
-            <p class="vocab">Multi-line Strings</p>
-            <p class="definition"> any new line characters inside of the template literal</p>
+        <div class="section-notes">
+            <div class="glossary flex-container">
+                <p class="vocab">Multi-line Strings</p>
+                <p class="definition"> any new line characters inside of the template literal</p>
+            </div>
             <ul>
                 <li> instead of using the "\n" tag inside the template literal to create a new line, surround the quote in backticks and place the string on the next line in editor</li>
             </ul>
         </div>
     </div>
-    <div>
+    <div class="topic-header">
         <h2>Objects and Classes</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>Objects</h3>
-        <div>
-            <p class="vocab">Objects</p>
-            <p class="definition"> a data structure for a collection of data. they can also contain properties and methods(which are variables and functions that belong to that object)</p>
+        <div class="section-notes">
+            <div class="glossary flex-container">
+                <p class="vocab">Objects</p>
+                <p class="definition"> a data structure for a collection of data. they can also contain properties and methods(which are variables and functions that belong to that object)</p>
+            </div>
             <ul>
                 <li>Objects are considered the only non-primitive data-type in JS</li>
             </ul>
         </div>
         <h3>Arrays vs Objects</h3>
-        <div>
+        <div class="section-notes">
             <ul>
                 <li>Arrays are referenced by their index number, while objects can be referenced by the property name</li>
                 <li>Arrays can only have predifined methods( like .shift, .pop, .push), while Objects can have custom methods</li>
             </ul>
         </div>
         <h3>Object Methods</h3>
-        <div>
+        <div class="section-notes">
            <div class="card">
                <div class="card-body syntax">
                 <p>
@@ -316,14 +325,14 @@
            </div> 
         </div>
         <h3>Object Constants</h3>
-        <div>
+        <div class="section-notes">
             <ul>
                 <li>Even if you declare an object variable with the const keyword, the properties and methods can be changed.</li>
                 <li> similar to arrays, the variable name can not be reassigned</li>
             </ul>
         </div>
         <h3>Method Parameters</h3>
-        <div>
+        <div class="section-notes">
             <ul>
                 <li>You can use parameter in methods the same as in functions</li>
             </ul>
@@ -344,29 +353,33 @@
         </div>
     </div>
     <div>
-        <h2>What is "this"</h2>
+        <h2 class="topic-header">What is "this"</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>This</h3>
-        <div>
-            <p class="vocab"> this</p>
-            <p class="definition"> refers to the function Name it is inside of </p>
+        <div class="section-notes">
+            <div class="glossary">
+                <p class="vocab"> this</p>
+                <p class="definition"> refers to the function Name it is inside of </p>
+            </div>
         </div>
     </div>
     <div>
-        <h2>JavaScript Classes</h2>
+        <h2 class="topic-header">JavaScript Classes</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>Classes</h3>
-        <div>
+        <div class="section-notes">
+        <div class="glossary">
             <p class="vocab">JavaScript Classes</p>
             <p class="definition">templates for objects. Use them to create multiple instances of the same kind of object</p>
+        </div>
             <ul>
                 <li>this is completely different from the html "class='" attribute </li>
                 <li>classes aren't unique to JS, as they are part of the object oriented Programming (OOP) paradigm and are found in many programming languages </li>
             </ul>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body syntax">
                     <p>
                         class <span> ClassName</span> { //the class name's first letter must be UPPERCASE <br>
                             <span> constructor</span>(propertyName, propertyName2) { <br>
@@ -379,19 +392,19 @@
             </div>
             <p>to add new object (or create a new instance) </p>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body syntax">
                     <p>
                         const <span> objectName</span> = new <span> ClassName</span> ( propertyValue, propertyValue2);
                     </p>
                 </div>
             </div>
             <h3>Class Methods</h3>
-            <div>
+            <div class="section-notes">
                 <ul>
                     <li>you can also add default methods to class:</li>
                 </ul>
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body syntax">
                         <p>
                             class <span> ClassName</span> { //the class name's first letter must be UPPERCASE <br>
                                 <span> constructor</span>(propertyName, propertyName2) { <br>
@@ -407,7 +420,7 @@
 
             </div>
         </div>
-        <div>
+        <div class="section-notes">
             <h3>Class Inheritance</h3>
             <div>
                 <ul>
@@ -415,7 +428,7 @@
                 </ul>
                 <p>use the "extends" keyword to create child classes:</p>
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body syntax">
                         class ChildClassName <span><em>extends</em></span> ParentClassName {
                             //notice that class names start with UPPERCASE letters <br>
                             code goes here...; <br>
@@ -426,11 +439,13 @@
             </div>
 
         </div>
-        <div>
+        <div class="section-notes">
             <h3>Super and Properties</h3>
             <div>
-                <p class="vocab">super method</p>
-                <p class="definition"> a method for child constructors to pass those properties that are inherited from the paent cass to be initialized in the constructor there.</p>
+                <div class="glossary">
+                    <p class="vocab">super method</p>
+                    <p class="definition"> a method for child constructors to pass those properties that are inherited from the paent cass to be initialized in the constructor there.</p>
+                </div>
                 <ul>
                     <li>You must use it with inherited properties that are defined in the paren class's constructor</li>
                 </ul>
@@ -464,11 +479,11 @@
         </div>
     </div>
     <div>
-        <h2> Default Function Parameters</h2>
+        <h2 class="topic-header"> Default Function Parameters</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>Default Function Parameters</h3>
-        <div>
+        <div class="section-notes">
             <ul>
                 <li> in Js, you can call a function without passing an argument for every parameter</li>
                 <li>whenever you dont want to a parameter to show up as undefined, set it to a default value</li>
@@ -483,43 +498,49 @@
         </div>
     </div>
     <div>
-        <h2>Overview - Advanced Array Methods</h2>
+        <h2 class="topic-header">Overview - Advanced Array Methods</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3> Arrays and Methods</h3>
-        <div>
-            <P class="vocab">array</P>
-            <p class="definition">a data structure ath can be stored with a variable</p>
-            
+        <div class="section-notes">
+            <div class="glossary">
+                <P class="vocab ">array</P>
+                <p class="definition">a data structure ath can be stored with a variable</p>
+                <p class="vocab flex-item-left">methods</p>
+                <p class="definition flex-item-right">a function that is never called itself but attaches, using the dot notation, to a set of data like an array, or object</p>
+            </div>
             <ul>
                 <li>arrays follow some of the rules of an object</li>
             </ul>
-            <p class="vocab">methods</p>
-            <p class="definition">a function that is never called itself but attaches, using the dot notation, to a set of data like an array, or object</p>
+            
         </div>
         <h3>Advanced Array methods facts</h3>
-        <div>
-            <p class="vocab">Higher Order Function</p>
-            <p class="definition"> a function that takes another function as an argument, or returns a function as a return value (ex: map,filter and reduce)</p>
-            <p class="vocab">Callback Functions</p>
-            <p class="definition">A function that's passed into a higher order function as an argument, then used inside of it</p>
-            <p class="vocab">iteration methods</p>
-            <p class="definition">it iterates through the array as many times as the array length, as opposed to mutating the array. (ex: map,filter, reduce</p>
-            <p class="vocab">mutator methods</p>
-            <p class="definition">methods that change the original array</p>
+        <div class="section-notes">
+            <div class="glossary">
+                <p class="vocab">Higher Order Function</p>
+                <p class="definition"> a function that takes another function as an argument, or returns a function as a return value (ex: map,filter and reduce)</p>
+                <p class="vocab">Callback Functions</p>
+                <p class="definition">A function that's passed into a higher order function as an argument, then used inside of it</p>
+                <p class="vocab">iteration methods</p>
+                <p class="definition">it iterates through the array as many times as the array length, as opposed to mutating the array. (ex: map,filter, reduce</p>
+                <p class="vocab">mutator methods</p>
+                <p class="definition">methods that change the original array</p>
+            </div>
             <ul>
                 <li> It is possible to pass a function into another function as an argument</li>
             </ul>
         </div>
     </div>
     <div>
-        <h2>Advanced Array Methods</h2>
+        <h2 class="topic-header">Advanced Array Methods</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>Map</h3>
-        <div>
-            <p class="vocab">map array method</p>
-            <p class="definition">a method that iterates thru an array,performs a given call function on every item in the array, and returns a new array at the end.</p >
+        <div class="section-notes">
+            <div class="glossary">
+                <p class="vocab">map array method</p>
+                <p class="definition">a method that iterates thru an array,performs a given call function on every item in the array, and returns a new array at the end.</p >
+            </div>
         
             <div class="card">
                 <div class="card-body syntax">
@@ -535,9 +556,11 @@
             </div>
         </div>
         <h3>Filter</h3>
-        <div>
-            <p class="vocab">filter</p>
-            <p class="definition">a method that takes a callback function that specifies a filterin condition, iterates through an array, and returns a new , filtered array</p>
+        <div class="section-notes">
+            <div class="glossary">
+                <p class="vocab">filter</p>
+                <p class="definition">a method that takes a callback function that specifies a filterin condition, iterates through an array, and returns a new , filtered array</p>
+            </div>
             <div class="card">
                 <div class="card-body syntax">
                     <p>
@@ -548,7 +571,7 @@
             </div>
         </div>
         <h3>Reduce</h3>
-        <div>
+        <div class="section-notes">
             <ul>
                 <li>Map and Filter both return a new array; Reduce returns a single value</li>
                 <li>while you don't need to set an initial value parameter for reduce with numbers, when working with arrays of objects, you do need toset an initial value</li>
@@ -564,11 +587,11 @@
         </div>
     </div>
     <div>
-        <h2>Arrays of Objects</h2>
+        <h2 class="topic-header">Arrays of Objects</h2>
     </div>
-    <div>
+    <div class="subtopic-header">
         <h3>Arrays of Objects</h3>
-        <div>
+        <div class="section-notes">
             <div class="card">
                 <div class="card-body syntax">
                     // heres an example of how to use the filter and reduce methods on arrays of objects <br>
@@ -583,24 +606,28 @@
             </div>
         </div>
         <h3>Method Chaining</h3>
-        <p class="vocab">Method Chaining</p>
-        <p class="definition"> when you run multiple methods in a single statement by using there return values</p>
-        <div class="card">
-            <div class="card-body syntax">
-                <p>
-                    // example of method chaining array functions <br> <br>
-                    const variableArrayName = ArrayName.<span>method1()</span>.<span>method2</span>(); <br> <br>
-
-                    //example of method chaining Obects (custom methods) <br> <br>
-                    const variableObjectName = objectName.<span>method1()</span>.<span>method2</span>();<br>
-                    // this will only work when the methods have return values when working with custom methods! 
-                </p>
+        <div class="section-notes">
+            <div class="glossary">
+                <p class="vocab">Method Chaining</p>
+                <p class="definition"> when you run multiple methods in a single statement by using there return values</p>
             </div>
+            <div class="card">
+                <div class="card-body syntax">
+                    <p>
+                        // example of method chaining array functions <br> <br>
+                        const variableArrayName = ArrayName.<span>method1()</span>.<span>method2</span>(); <br> <br>
+
+                        //example of method chaining Obects (custom methods) <br> <br>
+                        const variableObjectName = objectName.<span>method1()</span>.<span>method2</span>();<br>
+                        // this will only work when the methods have return values when working with custom methods! 
+                    </p>
+                </div>
+            </div>
+            <ul>
+                <li>Map,filter and reduce methods all have return values by default, but not all array methods have return values</li>
+                <li>methods must have return values to be chained</li>
+            </ul>
         </div>
-        <ul>
-            <li>Map,filter and reduce methods all have return values by default, but not all array methods have return values</li>
-            <li>methods must have return values to be chained</li>
-        </ul>
     </div>
     
 
